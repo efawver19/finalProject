@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="finalStyle.css">
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="final.js"></script>
+  <!--chart.js library I'm using -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+</head> 
+<body onload="startProgram()">
+
+    <div id="mainTitle">
+    <h1>Welcome to Get Random!</h1>
+    </div>
+
+    <div class="btn-group">
+        <button id="showLike" class="ui-state-default ui-corner-all">One's You liked</button>
+        <button id="showAddName" class="ui-state-default ui-corner-all">Add Name</button>
+        <button id="showGraph" class="ui-state-default ui-corner-all">Random Number Graph</button>
+      </div>
+
+
+        <div id="likedSection" class="hidden" class="ui-widget-content ui-corner-all">
+          <h3 class="ui-widget-header ui-corner-all">Favorites</h3>
+          <p>Click the "Like!" button to add to your Favorites list!</p>
+          <button id="clear">Clear</button>
+          <div id="fortunesList">
+            <ul id="favList">
+            </ul>
+          </div>
+        </div>
+
+        <div id="graphSection" class="hidden" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Graph of Random Numbers</h3>
+            <p id="graph">
+                Click "show numbers" to add a random number to the graph!
+            </p>
+            <button id="clearGraph">Clear</button>
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+
+          <div id="addNameSection" class="hidden" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Add Your Name</h3>
+            <p>
+                Add your name to have it appear in the fortunes!
+            </p>
+                <label for="addName">Add Name:</label>
+                <input type="name" id="addName">
+            <button id="submit">Add Name</button>
+
+          </div>
+
+
+    <div id="fortuneArea">
+    <div id="toCenter">
+      <div id="fortuneSpot">Click on a button to Get Random!</div>
+      <div id="centerButtons">
+      <button id="showFortune">Show Fortune</button> 
+      <button id="showJoke" title="Jokes from https://icanhazdadjoke.com/">Show Joke</button> 
+      <button id="showNumber">Show Number</button><br><br>
+      <button id="like">Like!</button>
+    </div>
+
+    </div>
+</div>
+
+</body>
+</html>

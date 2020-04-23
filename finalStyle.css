@@ -1,0 +1,147 @@
+/*jqueryui sliding part*/
+
+body
+{
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+h1
+{
+    font-size: 270%;
+}
+  #effect {
+    position: relative;
+    width: 240px;
+    height: 170px;
+    padding: 0.4em;
+  }
+  #effect h3 {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+  }
+
+  #showGraph
+  {
+    float: right;
+  }
+
+  #showAddName
+  {
+      position: absolute;
+      right: 40%;
+      left: 40%
+  }
+
+  #addNameSection
+  {
+    background-color: lightgreen;
+    position: absolute; 
+    top: 75%; 
+    left: 25%; 
+    right: 25%;
+    bottom: 0%;
+    text-align: center;
+    padding-bottom: 2.3%;
+    
+  }
+
+  #graphSection
+  {
+    float: right;
+    position: absolute; 
+    top: 25%; 
+    left: 75%; 
+    padding-left: 3px;
+  }
+ 
+  #likedSection
+  {
+    position: absolute;
+    top: 25%; 
+    right: 75%; 
+    padding-left: 3px;
+
+  }
+
+
+  #likedSection, #graphSection
+  {
+    width: 24%;
+    background-color: lightgreen;
+    border: 1px solid green;
+    min-height: 75%;
+  }
+
+  .hidden
+  {
+      display: none;
+  }
+
+  /*w3schools button group*/
+  .btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 20%;
+  }
+
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+
+  #fortuneArea 
+  {
+    width:auto; 
+    height:auto; 
+    position: fixed; 
+    background-color: lightgray; 
+    top: 25%; 
+    bottom: 25%;
+    left: 25%; 
+    right: 25%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    padding: 0% 2% 0% 2%;
+  }
+
+  #fortuneSpot
+  {
+    min-height: 100px;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    text-align: center;
+    font-size: x-large;
+    
+  }
+
+  #centerButtons
+  {
+    text-align: center;
+  }
+
+
+  h1
+  {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      
+  }
+
+  
